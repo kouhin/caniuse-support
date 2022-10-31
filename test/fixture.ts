@@ -115,7 +115,7 @@ const fixture: any = {
   },
   "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148": {
     browser: { id: "ios_saf", version: "12.2" },
-    versionIndex: "12.2-12.4",
+    versionIndex: "12.2-12.5",
     features: {
       transforms2d: { level: "full", needPrefix: false, notes: [] },
       flexbox: { level: "full", needPrefix: false, notes: [] },
@@ -123,7 +123,7 @@ const fixture: any = {
   },
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2": {
     browser: { id: "safari", version: "5.1.7" },
-    versionIndex: "5.1",
+    versionIndex: "5",
     features: {
       transforms2d: { level: "full", needPrefix: true, notes: [] },
       flexbox: { level: "partial", needPrefix: true, notes: [1] },
