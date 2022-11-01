@@ -20,7 +20,7 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "all": "yarn run lint && yarn run test && yarn run build",
-    "build": "gulp && webpack --mode=production && cross-env BUILD_MINIFIED=true webpack --mode=production",
+    "build": "yarn clean && gulp && webpack --mode=production && cross-env BUILD_MINIFIED=true webpack --mode=production",
     "clean": "rm -r -f dist lib cjs coverage",
     "lint": "gulp lint",
     "release": "yarn version -m 'caniuse-support release %s'",

@@ -5,11 +5,9 @@ const path = require("path");
 
 const useMinification = process.env.BUILD_MINIFIED === "true";
 const packageName = JSON.parse(
-  fs.readFileSync("package.json", "utf8")
+  fs.readFileSync("package.json", "utf8"),
 ).name.replace(/^@.*\//, "");
-const libraryName = packageName.replace(/(^|-)(.)/g, (match, _, c) =>
-  c ? c.toUpperCase() : ""
-);
+const libraryName = packageName.replace(/(^|-)(.)/g, (match, _, c) => (c ? c.toUpperCase() : ""));
 
 /** @type {import('webpack').Configuration} */
 const config = {
